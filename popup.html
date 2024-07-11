@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 20px;
+      background-color: #dc9063;
+    }
+    h1 {
+      color: #4a90e2;
+    }
+    .website {
+      background-color: #f00707;
+      border: 1px solid #dddddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .category {
+      font-size: 12px;
+      color: #999999;
+    }
+    .category.productivity {
+      color: #4CAF50;
+    }
+    .category.entertainment {
+      color: #FF9800;
+    }
+    .category.sports {
+      color: #F44336;
+    }
+    .category.news {
+      color: #2196F3;
+    }
+    .category.other {
+      color: #9E9E9E;
+    }
+    #toggleTracking {
+      background-color: #4a90e2;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #toggleTracking.off {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Tracker</h1>
+  <button id="toggleTracking">Turn Off Tracking</button>
+  <div id="websites"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
